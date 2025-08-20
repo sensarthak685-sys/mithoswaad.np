@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Ma Achar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a class="brand" href="index.html" aria-label="Ma Achar Home">
+                <img src="assets/WhatsApp Image 2025-08-19 at 23.01.09_7ac855e8 copy.png" alt="Ma Achar Logo" class="brand-logo">
+                <div class="brand-text">
+                    <span class="brand-title">Ma Achar</span>
+                    <span class="brand-subtitle">Estd. 2020</span>
+                </div>
+            </a>
+            <nav class="primary-nav" aria-label="Primary">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-button" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="mobileMenu" class="mobile-nav" hidden>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Products Hero Section -->
+    <section class="products-hero">
+        <div class="container">
+            <div class="products-hero-content">
+                <h1>Our Premium Pickles</h1>
+                <p>Discover our authentic homemade pickles, crafted with traditional recipes and the finest ingredients. Each jar is made with love and care, bringing you the authentic taste of home.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-page">
+        <div class="container">
+            <div class="products-toolbar">
+                <div class="chip-group" role="tablist" aria-label="Filter products">
+                    <button class="chip active" role="tab" aria-selected="true">All</button>
+                    <button class="chip" role="tab" aria-selected="false">Chicken</button>
+                    <button class="chip" role="tab" aria-selected="false">Lashuna</button>
+                </div>
+            </div>
+            <div class="products-grid">
+                <!-- Chicken Achar -->
+                <div class="product-detail-card" data-category="chicken">
+                    <div class="product-detail-image">
+                        <img src="assets/ChatGPT Image Aug 19, 2025, 05_45_39 PM.png" alt="Chicken Achar">
+                        <div class="product-badge">Best Seller</div>
+                    </div>
+                    <div class="product-detail-content">
+                        <h2>Chicken Achar</h2>
+                        <div class="product-price">NPR 299</div>
+                        <p class="product-description">Spicy and tangy chicken pickle made with traditional spices and authentic family recipe. This pickle is perfect for adding a burst of flavor to your meals.</p>
+                        
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Weight:</span>
+                                <span class="spec-value">500g</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Shelf Life:</span>
+                                <span class="spec-value">12 months (unopened), 6 months (opened)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Storage:</span>
+                                <span class="spec-value">Store in a cool, dry place. Refrigerate after opening.</span>
+                            </div>
+                        </div>
+
+                        <div class="product-highlights">
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>✓ Traditional family recipe</li>
+                                <li>✓ 100% natural ingredients</li>
+                                <li>✓ No artificial preservatives</li>
+                                <li>✓ Perfect spice balance</li>
+                                <li>✓ Long shelf life</li>
+                            </ul>
+                        </div>
+
+                        <div class="product-actions">
+                            <button class="buy-button" onclick="buyOnWhatsApp('Chicken Achar', 'NPR 299', '500g', 'chicken-achar')">
+                                <i class="fab fa-whatsapp"></i> Buy on WhatsApp
+                            </button>
+                            <button class="view-details-button" onclick="openProductDetail('chicken-achar')">
+                                <i class="fas fa-info-circle"></i> View Full Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lashuna Achar -->
+                <div class="product-detail-card" data-category="lashuna">
+                    <div class="product-detail-image">
+                        <img src="assets/no name 3.png" alt="Lashuna Achar">
+                    </div>
+                    <div class="product-detail-content">
+                        <h2>Lashuna Achar</h2>
+                        <div class="product-price">NPR 199</div>
+                        <p class="product-description">Aromatic garlic pickle with health benefits and perfect spice balance. Made with fresh garlic cloves and traditional spices for authentic taste.</p>
+                        
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Weight:</span>
+                                <span class="spec-value">500g</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Shelf Life:</span>
+                                <span class="spec-value">18 months (unopened), 8 months (opened)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Storage:</span>
+                                <span class="spec-value">Store in a cool, dry place. Refrigerate after opening.</span>
+                            </div>
+                        </div>
+
+                        <div class="product-highlights">
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>✓ Health benefits of garlic</li>
+                                <li>✓ 100% natural ingredients</li>
+                                <li>✓ No artificial preservatives</li>
+                                <li>✓ Perfect spice balance</li>
+                                <li>✓ Long shelf life</li>
+                            </ul>
+                        </div>
+
+                        <div class="product-actions">
+                            <button class="buy-button" onclick="buyOnWhatsApp('Lashuna Achar', 'NPR 199', '500g', 'lashuna-achar')">
+                                <i class="fab fa-whatsapp"></i> Buy on WhatsApp
+                            </button>
+                            <button class="view-details-button" onclick="openProductDetail('lashuna-achar')">
+                                <i class="fas fa-info-circle"></i> View Full Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Ma Achar?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>100% Natural</h3>
+                    <p>Made with only natural ingredients, no artificial preservatives or additives.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Made with Love</h3>
+                    <p>Each batch is carefully prepared with love and attention to detail.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-award"></i>
+                    <h3>Premium Quality</h3>
+                    <p>We use only the finest ingredients to ensure the best quality and taste.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Traditional Recipe</h3>
+                    <p>Our recipes have been passed down through generations for authentic taste.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <div class="footer-logo-container">
+                            <img src="assets/WhatsApp Image 2025-08-19 at 23.01.09_7ac855e8 copy.png" alt="Ma Achar Logo" class="footer-logo-image">
+                            <div class="footer-brand-text">
+                                <h3>Ma Achar</h3>
+                                <div class="footer-established">Estd. 2020</div>
+                                <div class="footer-tagline">Mummi Ko Haat Ani Mithoo Swaad</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Bringing authentic homemade pickles to your table since 2020.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/mithoswaadnp?igsh=MTJ6Y29pYTVweGJrNQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@mithoswaadnp?_t=ZS-8z19Uq7AR4E&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#" onclick="openProductDetail('chicken-achar')">Chicken Achar</a></li>
+                        <li><a href="#" onclick="openProductDetail('lashuna-achar')">Lashuna Achar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +977 9813520927</p>
+                    <p><i class="fas fa-envelope"></i> info@maachar.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kotihawa, Nepal</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ma Achar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/9779813520927" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

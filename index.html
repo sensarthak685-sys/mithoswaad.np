@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Achar - Premium Homemade Pickles</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a class="brand" href="index.html" aria-label="Ma Achar Home">
+                <img src="assets/WhatsApp Image 2025-08-19 at 23.01.09_7ac855e8 copy.png" alt="Ma Achar Logo" class="brand-logo">
+                <div class="brand-text">
+                    <span class="brand-title">Ma Achar</span>
+                    <span class="brand-subtitle">Estd. 2020</span>
+                </div>
+            </a>
+            <nav class="primary-nav" aria-label="Primary">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-button" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="mobileMenu" class="mobile-nav" hidden>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Ma Achar</h1>
+            <h2>Authentic Homemade Pickles</h2>
+            <p>Discover the perfect blend of spices and tradition in every jar. Made with love and authentic family recipes.</p>
+            <a href="#products" class="cta-button">Explore Our Pickles</a>
+        </div>
+        <div class="hero-image">
+            <div class="image-slider">
+                <div class="slide active" style="cursor:pointer;">
+                    <img src="assets/ChatGPT Image Aug 19, 2025, 05_45_39 PM.png" alt="Chicken Achar">
+                    <div class="slide-caption">Chicken Achar - Best Seller</div>
+                </div>
+                <div class="slide" style="cursor:pointer;">
+                    <img src="assets/no name 3.png" alt="Lashuna Achar">
+                    <div class="slide-caption">Lashuna Achar - Traditional Recipe</div>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Preview Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Pickle Collection</h2>
+            <p class="section-subtitle">Handcrafted with love and authentic spices</p>
+            
+            <div class="product-grid">
+                <div class="product-card" onclick="openProductDetail('chicken-achar')">
+                    <div class="product-image">
+                        <img src="assets/ChatGPT Image Aug 19, 2025, 05_45_39 PM.png" alt="Chicken Achar">
+                        <div class="product-badge">Best Seller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Chicken Achar</h3>
+                        <p class="product-description">Spicy and tangy chicken pickle made with traditional spices</p>
+                        <div class="product-details">
+                            <span class="weight">500g</span>
+                            <span class="price">NPR 299</span>
+                        </div>
+                        <button class="buy-button" onclick="buyOnWhatsApp('Chicken Achar', 'NPR 299', '500g', 'chicken-achar')">
+                            <i class="fab fa-whatsapp"></i> Buy on WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" onclick="openProductDetail('lashuna-achar')">
+                    <div class="product-image">
+                        <img src="assets/no name 3.png" alt="Lashuna Achar">
+                    </div>
+                    <div class="product-info">
+                        <h3>Lashuna Achar</h3>
+                        <p class="product-description">Aromatic garlic pickle with health benefits and perfect spice balance</p>
+                        <div class="product-details">
+                            <span class="weight">500g</span>
+                            <span class="price">NPR 199</span>
+                        </div>
+                        <button class="buy-button" onclick="buyOnWhatsApp('Lashuna Achar', 'NPR 199', '500g', 'lashuna-achar')">
+                            <i class="fab fa-whatsapp"></i> Buy on WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all-products">
+                <a href="products.html" class="cta-button">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Ma Achar was born from a passion for authentic, homemade pickles that bring back childhood memories. Our recipes have been passed down through generations, ensuring every jar contains the perfect blend of spices and tradition.</p>
+                    <p>We use only the finest ingredients and traditional methods to create pickles that are not just delicious but also healthy. Each batch is carefully prepared in small quantities to maintain quality and authenticity.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span>100% Natural</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <span>Made with Love</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <span>Premium Quality</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets\WhatsApp Image 2025-08-20 at 02.59.33_79dd239d.jpg" alt="Ma Achar Flower Logo - Our Story">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p class="section-subtitle">Order your favorite pickles or ask us anything</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>+977 9813520927</p>
+                            <a href="https://wa.me/9779813520927" class="whatsapp-link">Chat Now</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+977 9813520927</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@maachar.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Kotihawa, Nepal</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <div class="footer-logo-container">
+                            <img src="assets/WhatsApp Image 2025-08-19 at 23.01.09_7ac855e8 copy.png" alt="Ma Achar Logo" class="footer-logo-image">
+                            <div class="footer-brand-text">
+                                <h3>Ma Achar</h3>
+                                <div class="footer-established">Estd. 2020</div>
+                                <div class="footer-tagline">Mummi Ko Haat Ani Mithoo Swaad</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Bringing authentic homemade pickles to your table since 2020.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/mithoswaadnp?igsh=MTJ6Y29pYTVweGJrNQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@mithoswaadnp?_t=ZS-8z19Uq7AR4E&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#" onclick="openProductDetail('chicken-achar')">Chicken Achar</a></li>
+                        <li><a href="#" onclick="openProductDetail('lashuna-achar')">Lashuna Achar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +977 9813520927</p>
+                    <p><i class="fas fa-envelope"></i> info@maachar.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Nepal</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ma Achar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/9779813520927" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
